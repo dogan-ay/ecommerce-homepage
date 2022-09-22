@@ -1,0 +1,163 @@
+/* Reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS End*/
+
+:root {
+    --container: 0 10%;
+    --radius: 3px;
+
+        /* Colors */
+    --dark-blue: #034C8E;
+
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* Header Styles */
+header {
+    display: block;
+}
+
+#header-top {
+    height: 31px;
+    border-bottom: 1px solid #F1F5F9;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 54%;
+}
+
+#header-top a {
+    font-size: 14px;
+    padding: 8px;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+#header-top-left, #header-top-right {
+    padding: 8px 0;
+}
+
+#header-mid {
+    margin: var(--container);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5%;
+    padding: 0.5% 10px;
+}
+
+#header-mid-left {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container {
+    width: 130px;
+
+}
+
+#logo-container img{
+    width: 100%;
+}
+
+#search-container {
+    margin-left: 50px;
+}
+
+#search-input {
+    position: relative;
+    display: inline;
+}
+
+input[type="text"]{
+    width: 530px;
+    height: 35px;
+    border: 1px solid var(--dark-blue);
+    border-radius: var(--radius);
+
+}
+
+input[type="text"]::placeholder{
+    padding-left: 25px;
+}
+
+#search-input > i {
+    position:absolute;
+    font-size: 11pt;
+    left:7px;
+    top:5px;
+}
+
+.button {
+    background-color: #034C8E;
+    padding: 8px 35px;
+    height: 40px;
+    border: none;
+    border-radius: var(--radius);
+}
+
+#account-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#account-container > div {
+    font-size: 12px;
+}
+
+#account-container > div > i {
+    font-size: 20pt;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+
+/* Header Styles End*/

@@ -1,7 +1,6 @@
 {
   "name": "ecommerce-homepage",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,15 +17,17 @@
     "url": "https://github.com/dogan-ay/ecommerce-homepage/issues"
   },
   "homepage": "https://github.com/dogan-ay/ecommerce-homepage#readme",
+  "description": "",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
     "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/html": "^6.5.12",
     "@storybook/manager-webpack4": "^6.5.12",
-    "@storybook/web-components": "^6.5.12",
-    "babel-loader": "^8.2.5",
-    "lit-html": "^2.3.1"
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5"
   }
 }
