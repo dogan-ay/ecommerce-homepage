@@ -59,7 +59,7 @@ table {
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    
+    overflow-x: hidden;
 }
 
 p {
@@ -458,15 +458,41 @@ nav > ul > li:nth-child(3):hover .cargo-option{
 /* Dropdown Styles End */
 
 /* Slider Styles */
-#figure {
-    width: 100vw;
+figure {
+    width: 100%;
+    margin: 0 auto;
 }
-#figure > img {
+figure > img {
     width: 100%;
 
 }
 
 /* Slider Styles End*/
+
+/* Product Row Styles */
+
+.product-row {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    margin-top: 1%;
+    padding: 0 2%;
+    justify-content: center;
+}
+
+.product-row a{
+    
+}
+
+.product-container {
+    width: 20%;
+    height: 25%;
+}
+
+.product-container > a> img{
+    width: 100%;
+}
+/* Product Row Styles End*/
 
 
 
