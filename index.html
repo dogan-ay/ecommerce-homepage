@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="/public/owl.carousel.css">
+    <link rel="stylesheet" href="/public/owl.theme.default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">    
     <script src="https://kit.fontawesome.com/501af6406a.js" crossorigin="anonymous"></script>
     <title>Ecommerce Homepage</title>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"></script>
 </head>
 <body>
     <header>
@@ -40,7 +44,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder="css ve js çeşitleri 500g. 6,90 TL">
                         </div>
-                        <button type="submit" class="button">Ara</button>
+                        <button type="submit" class="button"><p>Ara</p></button>
                     </form>
                 </div>
             </div>
@@ -52,12 +56,97 @@
                 <div>
                     <i class="fa-solid fa-basket-shopping"></i>
                     <a href="">Sepetim</a>
+                    <div class="basket-content">
+                        <div class="arrow-up"></div>
+                        <div id="basket-window">
+                            <div id="basket-products">
+                                <p>sepetinizde ürün bulunmamaktadır</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-bars"></i>
+                <a href="">Tüm Kategoriler</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div id="category-dropdown">
+                    <ul>                        
+                        <menu-item icon="/public/img/star.svg" href="test4" name="kategori1">
+                           <inner-item href="test1">item 1</inner-item>
+                           <inner-item href="test2">item 2</inner-item>
+                           <inner-item href="test3">item 3</inner-item>
+                        </menu-item>
 
-    <script defer src="src/components/button.js"></script>
+                        <menu-item icon="/public/img/star.svg" href="test5" name="kategori-2">
+                            <inner-item href="test1">item 1</inner-item>
+                            <inner-item href="test2">item 2</inner-item>
+                            <inner-item href="test3">item 3</inner-item>
+                         </menu-item>                                              
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <i class="fa-solid fa-bullhorn"></i>
+                <a href="">Kampanyalar</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-truck-fast"></i>
+                <a href="">Kargo ile Teslimat</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="cargo-option">
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="select-1">
+                                    <div class="radio-container">
+                                        <input type="radio" name="cargo" id="select-1" checked>
+                                        <p>Kargo ile Teslimat</p>
+                                    </div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="select-2">
+                                    <div class="radio-container">
+                                        <input type="radio" name="cargo" id="select-2">
+                                    <p>Tıkla Gel Al</p>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>   
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <section>
+        
+    <div class="owl-carousel">
+        <div class="item">
+            <a href="">
+                <figure>
+                    <img src="/public/img/slide-1.webp" alt="">
+                </figure>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <figure>
+                    <img src="/public/img/slide-2.webp" alt="">
+                </figure>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <script defer src="src/components/menuItem.js"></script>
+    <script src="/public/owl.carousel.min.js"></script>
+    
+    <script src="/src/owl-initializer.js"></script>
 </body>
 </html>
