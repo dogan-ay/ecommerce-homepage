@@ -49,7 +49,7 @@ $(document).ready(function(){
         margin:0,
         nav:true,
         autoplay:true,
-        autoplayTimeout:5000,
+        autoplayTimeout:4500,
         autoplayHoverPause:true,
 
         responsive:{
@@ -93,7 +93,7 @@ $(document).ready(function(){
         margin:0,
         nav:true,
         autoplay:true,
-        autoplayTimeout:5000,
+        autoplayTimeout:5500,
         autoplayHoverPause:true,
 
         responsive:{
