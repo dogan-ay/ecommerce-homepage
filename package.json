@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/dogan-ay/ecommerce-homepage/issues"
   },
-  "homepage": "https://github.com/dogan-ay/ecommerce-homepage#readme",
+  "homepage": "http://dogan-ay.github.io/ecommerce-homepage",
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -28,6 +30,7 @@
     "@storybook/html": "^6.5.12",
     "@storybook/manager-webpack4": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.2.5"
+    "babel-loader": "^8.2.5",
+    "gh-pages": "^4.0.0"
   }
 }
