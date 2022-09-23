@@ -1,7 +1,7 @@
 const innerTemplate = document.createElement("template");
 innerTemplate.innerHTML =  `
 <style>
-@import '/public/style.css';
+@import 'public/style.css';
 </style>
 
 <a href="">
@@ -28,7 +28,7 @@ class InnerItem extends HTMLElement {
 const itemTemplate = document.createElement("template");
 itemTemplate.innerHTML =  `
 <style>
-@import '/public/style.css';
+@import 'public/style.css';
 </style>
 
 <a href="">
@@ -38,7 +38,7 @@ itemTemplate.innerHTML =  `
     <div class="category-dropdown-inner">
         <ul><slot><inner-item></inner-item></slot></ul>
     </div>
-<img id="right-arrow" src="/public/img/right-arrow.svg" alt="">
+<img id="right-arrow" src="public/img/right-arrow.svg" alt="">
 
 </li>
 </a>
